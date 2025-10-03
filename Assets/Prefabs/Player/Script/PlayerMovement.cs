@@ -57,9 +57,23 @@ public class PlayerMovement : MonoBehaviour
 
     }*/
 
-    public void MovePlayer(float input)
+    /***public void MovePlayer(float input)
     {
         movementStrategy.Move(transform, player, input);
+    }*/
+
+    private void Update()
+    {
+        float inputHorizontal = Input.GetAxis("Horizontal");
+        MovePlayer(inputHorizontal);
+    }
+
+    public void MovePlayer(float input)
+    {
+         if (movementStrategy != null)
+        {
+            movementStrategy.Move(transform, player, input);
+        }
     }
 
     // Logica para aplicarcion de fuerzas 
