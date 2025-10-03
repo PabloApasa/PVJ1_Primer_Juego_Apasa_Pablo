@@ -51,15 +51,15 @@ public class PlayerMovement : MonoBehaviour
         this.movementStrategy = movementStrategy;
     }
     // Update is called once per frame
-    private void Update()
+    /***private void Update()
     {
         MovePlayer();
 
-    }
+    }*/
 
-    public void MovePlayer()
+    public void MovePlayer(float input)
     {
-        movementStrategy.Move(transform, player);
+        movementStrategy.Move(transform, player, input);
     }
 
     // Logica para aplicarcion de fuerzas 
