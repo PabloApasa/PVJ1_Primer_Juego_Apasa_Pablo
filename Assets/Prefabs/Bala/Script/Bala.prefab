@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4524462821955415041}
   - component: {fileID: 8964181383218571085}
   - component: {fileID: 2790601200895551731}
+  - component: {fileID: 616787879838856253}
   m_Layer: 0
   m_Name: Bala
   m_TagString: Untagged
@@ -121,3 +122,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f98039641d44490418c7cff543720d1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 609394424754118601, guid: ada730b63c5e00447bb8fbf8eb8c5163, type: 3}
+  velocidadBala: 4
+--- !u!54 &616787879838856253
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5973912236360595269}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

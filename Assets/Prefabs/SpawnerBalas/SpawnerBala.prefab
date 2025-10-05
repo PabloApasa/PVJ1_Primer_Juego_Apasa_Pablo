@@ -44,4 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29d6b4e340c1fc841abfa7784c310c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bala: {fileID: 5973912236360595269, guid: bab6c7ed87b0d48429a4efc6edef6143, type: 3}
+  velocidadBala: 10
+  tiempoVidaBala: 5
+  explosionPrefab: {fileID: 609394424754118601, guid: ada730b63c5e00447bb8fbf8eb8c5163, type: 3}

@@ -27,7 +27,8 @@ public class AcelerateMovement : IMovementStrategy
        //player.Velocity = Mathf.Clamp(currentSpeed, -player.Velocity, player.Velocity);
        // transform.Translate(currentSpeed * Time.deltaTime, 0, 0);
         float movement = direction * player.Velocity * Time.deltaTime;
-        transform.Translate(movement * Time.deltaTime, 0 , 0);
+        //transform.Translate(movement * Time.deltaTime, 0 , 0);
+        transform.Translate(movement, 0 , 0);
     }
 }
 

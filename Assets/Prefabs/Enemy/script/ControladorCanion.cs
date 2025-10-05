@@ -9,7 +9,8 @@ public class ControladorCanion : MonoBehaviour
     void Start()
     {
         //llama a la funcion disparar cada intervaloDeDisparo segundos
-        InvokeRepeating("DispararBala", 2f, 2f);
+        //InvokeRepeating("DispararBala", 2f, 2f);
+        InvokeRepeating("DispararBala", intervaloDeDisparo, intervaloDeDisparo);
     }
 
     // Update is called once per frame
